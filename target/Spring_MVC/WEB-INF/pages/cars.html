@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car page</title>
+</head>
+<body>
+<div>
+    <table border="1" >
+        <tr>
+            <th>Mark</th>
+            <th>Country</th>
+            <th>Power</th>
+        </tr>
+        <tr th:each ="cl : ${carList}">
+            <td th:utext="${cl.mark}">...</td>
+            <td th:utext="${cl.country}">...</td>
+            <td th:utext="${cl.power}">...</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
